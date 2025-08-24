@@ -31,8 +31,6 @@
 //     -109 <= target <= 109
 //     Only one valid answer exists.
 
- 
-// Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
 let nums = [2,7,11,15], target = 18;
 
@@ -49,3 +47,22 @@ var twoSum = function(nums, target) {
 };
 
 console.log(twoSum(nums, target)); // Test with target 1
+
+
+// Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+
+
+function optimisedSol(nums, target){
+    const numMap = new Map();
+    for (let i = 0 ; i<nums.length; i++){
+       let findNum = target - nums[i];
+        if(numMap.has(findNum)){
+            return([numMap.get(findNum),i])
+        }
+        console.log(numMap.set(nums[i], i));
+    }
+    console.log("No match found");
+    return undefined;
+}
+
+console.log(optimisedSol([1,2,3,4,5,6], 7));
