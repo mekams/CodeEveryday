@@ -66,3 +66,4 @@ function optimisedSol(nums, target){
 }
 
 console.log(optimisedSol([1,2,3,4,5,6], 7));
+
