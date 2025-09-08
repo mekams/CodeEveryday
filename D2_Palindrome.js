@@ -49,3 +49,5 @@ function isPalindrome(x){
 console.log(isPalindrome(121));
 
 // Follow up: Could you solve it without converting the integer to a string?
+
+function isPalindromeOptimised(x){}
