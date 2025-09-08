@@ -32,3 +32,13 @@ body{
     gap: 10px;
     background-color: lightgrey;
 } */
+
+.para{
+    background-color :beige;
+    color: brown;
+    font-size: 120px;
+}
+
+.new-para{
+    background-color :greenyellow;
+    }

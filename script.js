@@ -28,3 +28,22 @@ btn.style.color = "white";
 btn.style.backgroundColor = "red";
 
 document.body.prepend(btn);
+
+// let para = document.createElement("p");
+// para.className = "para";
+// para.innerText = "This is a paragraph";
+// para.style.color = "blue";
+// para.style.fontSize = "20px";
+// document.querySelector("body").append(para);
+
+let para = document.querySelector(".para");
+// para.setAttribute("class", "new-para");
+para.classList.add("new-para");
+
+let toggleBtn = document.querySelector("#tg-btn");
+let currMode = "light";
+// let body1 = document.querySelector("body");
+toggleBtn.addEventListener("click",()=>{
+  currMode === "light" ? 
+  (document.body.style.backgroundColor = "black", currMode= "dark"): (document.body.style.backgroundColor = "white", currMode= "light");
+})
