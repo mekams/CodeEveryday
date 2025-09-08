@@ -41,9 +41,29 @@ let para = document.querySelector(".para");
 para.classList.add("new-para");
 
 let toggleBtn = document.querySelector("#tg-btn");
-let currMode = "light";
-// let body1 = document.querySelector("body");
-toggleBtn.addEventListener("click",()=>{
-  currMode === "light" ? 
-  (document.body.style.backgroundColor = "black", currMode= "dark"): (document.body.style.backgroundColor = "white", currMode= "light");
-})
+// let currMode = "light";
+// toggleBtn.addEventListener("click",()=>{
+  //   currMode === "light" ? 
+  //   (document.body.style.backgroundColor = "black", currMode= "dark"): (document.body.style.backgroundColor = "white", currMode= "light");
+  // })
+//   let body = document.querySelector("body");
+//   body.classList.add("light");
+// toggleBtn.addEventListener("click",()=>{
+//   body.classList.toggle("dark");
+//   body.classList.toggle("light");
+// })
+
+// let toggleBtn = document.querySelector("#tg-btn");
+let body = document.querySelector("body");
+
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  body.classList.toggle("light");
+
+  // Change button text/icon based on mode
+  if (body.classList.contains("dark")) {
+    toggleBtn.textContent = "🌞 Light Mode";
+  } else {
+    toggleBtn.textContent = "🌙 Dark Mode";
+  }
+});

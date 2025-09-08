@@ -42,3 +42,42 @@ body{
 .new-para{
     background-color :greenyellow;
     }
+
+/* .dark{
+    background-color :black;
+}
+.light{
+    background-color :white;
+} */
+
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+#tg-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  transition: background-color 0.2s;
+}
+
+#tg-btn:hover {
+  background-color: #ccc;
+}
